@@ -3,7 +3,7 @@
 double a = 10;
 double b = 12;
 
-BinaryNumericOperation op = CalculationService.Sum;
+BinaryNumericOperation op = CalculationService.ShowSum;
+op += CalculationService.ShowMax;
 
-double result = op(a, b);
-Console.WriteLine(result);
+op.Invoke(a, b);
